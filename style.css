@@ -1,24 +1,29 @@
 /* Reset styles */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensures header is above other content */
 }
 
 header nav ul {
@@ -27,112 +32,196 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-right: 1rem;
+    margin-right: 20px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
-    color: #ffd700; /* Change color on hover */
+    color: #ffd700;
+}
+
+header .btn {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Intro section styles */
+#intro {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('cinemas.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 600px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-container {
-    text-align: center;
-    padding: 5rem 0;
+    max-width: 800px;
 }
 
 .intro-container h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .intro-container p {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+/* Features section styles */
+#features {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .feature {
-    padding: 4rem 0;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .feature img {
     max-width: 100%;
+    height: auto;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
 .feature h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 .feature p {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* About section styles */
+#about {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
 }
 
 .about-container {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
-    padding: 4rem 0;
 }
 
 .about-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .about-container p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: #555;
+    line-height: 1.6;
+}
+
+/* Team section styles */
+#team {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
 .team-video {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 4rem 0;
-}
-
-.team-links {
-    text-align: center;
-    margin-top: 1rem;
+    max-width: 100%;
+    margin-bottom: 30px;
 }
 
 .team-links a {
     display: inline-block;
-    margin-right: 1rem;
+    margin: 0 10px;
     color: #333;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    border: 2px solid #333;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
 }
 
 .team-links a:hover {
-    background-color: #333;
-    color: #fff;
+    color: #ffd700;
 }
 
-.btn {
+.team-links .btn {
     display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #333;
-    color: #fff;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #333;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    margin-top: 1rem;
-    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
-.btn:hover {
-    background-color: #555;
+.team-links .btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .feature {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-container {
+        padding: 60px 10px;
+    }
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-container {
+        padding: 60px 10px;
+    }
 }
