@@ -38,7 +38,12 @@ User Name: 11186053
 Password: 60-dayfreetrial
 
 Access the source file on google drive : https://drive.google.com/drive/folders/1Sg0nc77ORPlNp3C2Okrfntq7b4c4hG7j?usp=sharing
-Acknowledgments
+
+
+
+Acknowledgments![Screenshot 2024-07-13 232712](https://github.com/user-attachments/assets/d9d734fb-63d0-425d-bc2d-e9ae44cd6031)![Screenshot 2024-07-13 232757](https://github.com/user-attachments/assets/750fcb17-cd9f-4021-a43c-cf6707102644)
+
+
 Books:
 "Online Cinema Ticket Booking System Submitted in Fulfillment of the requirement for the award of the degree of Bachelor of Technology In Computer Engineering"
 Author: Shivin Baweja (1106733)
